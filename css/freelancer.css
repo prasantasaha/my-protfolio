@@ -172,7 +172,7 @@ header.masthead {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url("/img/profile.jpg"); }
+    background-image: url("../img/profile.jpg"); }
   header.masthead .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
