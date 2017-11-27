@@ -522,6 +522,7 @@
 }
 .cv-container h5 {
   font-weight: 400;
+  font-size: 105%;
   color: #555;
 }
 .cv-container h6,
@@ -580,6 +581,12 @@
 .cv-container .cv-summary .user-links a {
   white-space: nowrap;
   line-height: 1.5em;
+}
+.cv-container .cv-summary .header {
+  margin: 1em 0;
+}
+.cv-summary ul {
+  padding-left: 20px;
 }
 .cv-container .vcard .css-crop,
 .cv-container .cv-summary .css-crop {
