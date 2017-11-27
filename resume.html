@@ -3,12 +3,12 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>VisualCV</title>
-
+  <title>Prasanta Saha's Resume</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Prasanta Saha is a  experienced, resourceful, result-oriented, frontend web developer, specializing in web application design, architecture and development, with a focus on quality and an eye to emerging technologies.">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1">
-  <meta name="robots" content="noindex">
   <style type="text/css">
     .kMoxiz {
       position: fixed;
@@ -79,7 +79,7 @@
       margin-right: 10px;
     }
 
-    .crqwyy {
+    .main-wrapper {
       transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
@@ -95,7 +95,7 @@
     }
 
     @media (min-width: 768px) {
-      .crqwyy {
+      .main-wrapper {
         transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         -webkit-transform: translate3d(0, 0, 0);
@@ -129,7 +129,7 @@
 
     }
 
-    .heiEhu {
+    .scrollable-cv-container {
       position: absolute;
       top: 120px;
       left: 0;
@@ -140,7 +140,7 @@
 
     }
 
-    .heiEhu .cv-preview {
+    .scrollable-cv-container .cv-preview {
       padding: 10px;
       margin-top: 0;
       position: relative;
@@ -149,20 +149,20 @@
 
     }
 
-    .heiEhu .cv-preview .mce-item-table {
+    .scrollable-cv-container .cv-preview .mce-item-table {
       border: none;
 
     }
 
-    .heiEhu .cv-preview .mce-item-table td,
-    .heiEhu .cv-preview .mce-item-table th,
-    .heiEhu .cv-preview .mce-item-table caption {
+    .scrollable-cv-container .cv-preview .mce-item-table td,
+    .scrollable-cv-container .cv-preview .mce-item-table th,
+    .scrollable-cv-container .cv-preview .mce-item-table caption {
       border: none;
 
     }
 
     @media (min-width: 500px) {
-      .heiEhu .cv-preview {
+      .scrollable-cv-container .cv-preview {
         padding: 20px;
 
       }
@@ -170,8 +170,8 @@
     }
 
     @media (min-width: 768px) {
-      .heiEhu {
-        top: 60px;
+      .scrollable-cv-container {
+        top: 20px;
 
       }
 
@@ -182,61 +182,48 @@
 
 <body>
   <div id="app">
-    <span data-reactid=".0">
-      <div data-reactid=".0.0">
-        <div class="crqwyy" data-reactid=".0.0.0">
-          <div class="s-alert-wrapper" data-reactid=".0.0.0.2"></div>
-          <div data-reactid=".0.0.0.3">
-            <div data-reactid=".0.0.0.3.$main">
-              <div class="scrollable-container heiEhu" data-reactid=".0.0.0.3.$main.1">
-                <div class="cv-viewer cv-preview" data-reactid=".0.0.0.3.$main.1.0">
-                  <link rel="stylesheet" type="text/css" href="./css/air.css" data-reactid=".0.0.0.3.$main.1.0.$air">
-                  <div class="cv-container animated fadeIn " data-reactid=".0.0.0.3.$main.1.0.1">
-                    <div class="cv-content single-column" data-reactid=".0.0.0.3.$main.1.0.1.0">
-                      <section id="profile" class="vcard profile" data-reactid=".0.0.0.3.$main.1.0.1.0.0">
-                        <article data-bind="content" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0">
-                          <div class="user-thumb visible" data-bind="thumb" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.0">
-                            <div class="css-crop bg-cover" style="background-image:url(img/profile.jpg);"
-                              data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.0.0"></div>
+    <span>
+      <div>
+        <div class="main-wrapper">
+          <div>
+            <div>
+              <div class="scrollable-container scrollable-cv-container">
+                <div class="cv-viewer cv-preview">
+                  <link rel="stylesheet" type="text/css" href="./css/air.css">
+                  <div class="cv-container animated fadeIn ">
+                    <div class="cv-content single-column">
+                      <section id="profile" class="vcard profile">
+                        <article data-bind="content" class="">
+                          <div class="user-thumb visible" data-bind="thumb">
+                            <div class="css-crop bg-cover" style="background-image:url(img/profile.jpg);"></div>
                           </div>
-                          <div class="fn user-title" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1">
-                            <h1 class="full-name" data-bind="full_name" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.0">
-                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Full name" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.0.0">Prasanta Saha</span>
+                          <div class="fn user-title">
+                            <h1 class="full-name" data-bind="full_name">
+                              <span class="needsclick" contenteditable="false" data-placeholder="Full name">Prasanta Saha</span>
                             </h1>
-                            <h2 class="title" data-bind="headline" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.1">
-                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Headline / current title"
-                                data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.1.0">Senior Software Development Engineer at Oath </span>
+                            <h2 class="title" data-bind="headline">
+                              <span class="needsclick" contenteditable="false" data-placeholder="Headline / current title">Senior Software Development Engineer at Oath </span>
                             </h2>
                           </div>
-                          <ul class="user-contact nowrap-list" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2">
-                            <li class="adr locality" data-bind="location" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.0">
-                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Location" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.0.0">San Francisco Bay Area, USA</span>
+                          <ul class="user-contact nowrap-list">
+                            <li class="adr locality" data-bind="location">
+                              <span class="needsclick" contenteditable="false" data-placeholder="Location">San Francisco Bay Area, USA</span>
                             </li>
-                            <li class="phone" data-bind="phone" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.1">
-                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Phone" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.1.0">(650) 242-5407</span>
+                            <li class="phone" data-bind="phone">
+                              <span class="needsclick" contenteditable="false" data-placeholder="Phone">(650) 242-5407</span>
                             </li>
-                            <li class="email" data-bind="email" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.2">
-                              <a href="mailto:prasanta.work@outlook.com" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.2.0">prasanta.work@outlook.com</a>
-                            </li>
-                          </ul>
-                          <ul class="user-links user-websites nowrap-list" data-bind="websites" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3">
-                            <li data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0">
-                              <a href="https://github.com/prasantasaha" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0">
-                                <i class="fa fa-fw fa-github" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.0"></i>
-                                <span data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.1">&nbsp;</span>
-                                <span data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.2">github.com/prasantasaha</span>
-                              </a>
+                            <li class="email" data-bind="email">
+                              <a href="mailto:prasanta.work@outlook.com">prasanta.work@outlook.com</a>
                             </li>
                           </ul>
-                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.4"></div>
+                          <div class="clearfix"></div>
                         </article>
                       </section>
-                      <section id="summary" class="cv-summary text_story" data-reactid=".0.0.0.3.$main.1.0.1.0.1">
-                        <article data-bind="content" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.1.0">
-                          <div id="react-tinymce-24" class="about-text mce-content-body" spellcheck="true" placeholder="Description"
-                            data-reactid=".0.0.0.3.$main.1.0.1.0.1.0.0">
+                      <section id="summary" class="cv-summary text_story">
+                        <article data-bind="content" class="">
+                          <div id="react-tinymce-24" class="about-text mce-content-body" spellcheck="true" placeholder="Description">
                             <p>
-                              <span>Experienced, resourceful, result-oriented, full-stack engineer, specializing in web application
+                              <span>Experienced, resourceful, result-oriented, frontend web developer, specializing in web application
                                 design, architecture and development, with a focus on quality and an eye to emerging technologies.&nbsp;</span>
                               <br>
                               <span></span>
@@ -249,60 +236,55 @@
                             </p>
                             <ul>
                               <li>
-                                <span>Languages: JavaScript; ES2015, ActionScript, C#, SASS/LESS
-                                  <span>&nbsp;</span>
-                                </span>
+                                Languages: JavaScript; ES2015, ActionScript, C#, SASS/LESS
                               </li>
                               <li>
-                                <span>Frameworks: Angular; React; Redux; Node.js</span>
+                                Frameworks: Angular; React; Redux; Node.js
                               </li>
                               <li>
-                                <span>Tools and stack: Webpack; Yarn/NPM; Gulp; Selenium; TeamCity; Jenkins; Git;&nbsp;LINQ</span>
+                                Tools and stack: Webpack; Yarn/NPM; Gulp; Selenium; TeamCity; Jenkins; Git;&nbsp;LINQ
                               </li>
                               <li>
-                                <span>Databases: MySQL; MSSQL, MongoDB</span>
+                                Databases: MySQL; MSSQL, MongoDB
                               </li>
                             </ul>
                           </div>
                         </article>
-                        <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.1.1"></div>
+                        <div class="clearfix"></div>
                       </section>
-                      <div class="timeline" data-reactid=".0.0.0.3.$main.1.0.1.0.2">
-                        <section class="timeline-row dated_story" data-bind="sections" id="positions" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0">
-                          <div class="timeline-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0">
-                            <header data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0">
-                              <h3 class="header-text empty" data-bind="label" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0.0">
-                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0.0.0">Work experience</span>
+                      <div class="timeline">
+                        <section class="timeline-row dated_story" data-bind="sections" id="positions">
+                          <div class="timeline-left">
+                            <header>
+                              <h3 class="header-text empty" data-bind="label">
+                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience">Work experience</span>
                               </h3>
                             </header>
                           </div>
-                          <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.1"></div>
-                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.2"></div>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.0.0">2016-08</span>
+                          <div class="timeline-right"></div>
+                          <div class="clearfix"></div>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-08</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.1.0">Current</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Current</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.0.0">Senior Software Development Engineer</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Senior Software Development Engineer</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1.0.0">Oath Inc. San Francisco Bay Area, USA</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Oath Inc. San Francisco Bay Area, USA</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-26" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.2">
+                                <div id="react-tinymce-26" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <p>
                                     <br>
                                   </p>
@@ -321,32 +303,30 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.0.0">2013-02</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013-02</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.1.0">2016-08</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-08</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.0.0">UI Architect</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">UI Architect</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1.0.0">Imagine Technologies Inc. (contracted to Adap.tv/AOL), San Francisco Bay Area, USA</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Imagine Technologies Inc. (contracted to Adap.tv/AOL), San Francisco Bay Area, USA</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-28" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.2">
+                                <div id="react-tinymce-28" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <ul>
                                     <li>
                                       <span>
@@ -380,32 +360,30 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.0.0">2008-11</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2008-11</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.1.0">2013-01</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013-01</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.0.0">Technical Lead-Flex</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Technical Lead-Flex</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1.0.0">Pramati Technologies Inc. (contracted to Adap.tv/AOL), Hyderabad Area, India</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Pramati Technologies Inc. (contracted to Adap.tv/AOL), Hyderabad Area, India</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-30" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.2">
+                                <div id="react-tinymce-30" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <ul>
                                     <li>
                                       <span>
@@ -435,8 +413,7 @@
                                                 <span>
                                                   <span>utilizing
                                                     <span>&nbsp;</span>
-                                                    <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank"
-                                                      rel="nofollow" data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>
+                                                    <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank" rel="nofollow" data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>
                                                   </span>
                                                 </span>
                                               </span>
@@ -459,32 +436,30 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.0.0">2008-04</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2008-04</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.1.0">2008-11</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2008-11</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.0.0">Team Lead</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Team Lead</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1.0.0">SemanticSpace Technologies, Hyderabad Area, India</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">SemanticSpace Technologies, Hyderabad Area, India</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-32" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.2">
+                                <div id="react-tinymce-32" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <p>
                                     <span>
                                       <span>
@@ -515,32 +490,30 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.0.0">2007-04</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2007-04</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.1.0">2008-03</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2008-03</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.0.0">Team Lead - Multimedia</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Team Lead - Multimedia</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1.0.0">Instancy Inc. Hyderabad Area, India</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Instancy Inc. Hyderabad Area, India</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-34" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.2">
+                                <div id="react-tinymce-34" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <ul>
                                     <li>
                                       <span>
@@ -560,32 +533,30 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.0.0">2006-06</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2006-06</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.1.0">2007-03</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2007-03</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.0.0">Flash Developer</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Flash Developer</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1.0.0">Catalytic Software, Hyderabad Area, India</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Catalytic Software, Hyderabad Area, India</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-36" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.2">
+                                <div id="react-tinymce-36" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <ul>
                                     <li>
                                       <span>
@@ -594,8 +565,7 @@
                                       <span>R</span>ich Internet applications in Adobe Flex&nbsp;
                                       <span>
                                         <span>utilizing
-                                          <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank" rel="nofollow"
-                                            data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>.</span>
+                                          <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank" rel="nofollow" data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>.</span>
                                       </span>&nbsp;</li>
                                     <li>
                                       <span>
@@ -615,37 +585,36 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.0.0">2005-01</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2005-01</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.1.0">2006-05</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2006-05</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.0.0">Developer - Media Technology</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Developer - Media Technology</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1.0.0">Trina Systems, Hyderabad Area, India</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Trina Systems, Hyderabad Area, India</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-38" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.2">
+                                <div id="react-tinymce-38" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <ul>
                                     <li>
                                       <span>Built&nbsp;reusable&nbsp;</span>shells for holding variations of content, interactive
                                       games and XML driven templates for E-Learning courses that are customizable in many
-                                      aspects</li>
+                                      aspects
+                                    </li>
                                     <li>
                                       <span>
                                         <span>Provided tech/architectural
@@ -656,39 +625,38 @@
                                       <span>
                                         <span>
                                           <span>Built&nbsp;</span>a library of reusable components using Flash, ActionScript and
-                                          JavaScript</span>
+                                          JavaScript
+                                        </span>
                                       </span>
                                     </li>
                                   </ul>
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="page-break" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.0.0">2005-01</span>
+                          <article data-bind="contents" class="page-break">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2005-01</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.1.0">2006-05</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2006-05</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.0.0">Developer</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Developer</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1.0.0">TRINA SYSTEMS</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">TRINA SYSTEMS</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-40" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.2">
+                                <div id="react-tinymce-40" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <p>Worked on SCORM based shell for holding variations of content and XML driven templates
                                     for E-Learning courses that are customizable in many aspects. During this time, I've
                                     worked on almost 15 e-learning courses which are graphically rich and within the constraints
@@ -696,104 +664,97 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.2"></div>
+                            <div class="clearfix"></div>
                           </article>
                         </section>
-                        <section class="timeline-row dated_story" data-bind="sections" id="degrees" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1">
-                          <div class="timeline-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0">
-                            <header data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0">
-                              <h3 class="header-text empty" data-bind="label" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0.0">
-                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Education" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0.0.0">Education</span>
+                        <section class="timeline-row dated_story" data-bind="sections" id="degrees">
+                          <div class="timeline-left">
+                            <header>
+                              <h3 class="header-text empty" data-bind="label">
+                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Education">Education</span>
                               </h3>
                             </header>
                           </div>
-                          <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.1"></div>
-                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.2"></div>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.0.0">2000</span>
+                          <div class="timeline-right"></div>
+                          <div class="clearfix"></div>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2000</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.1.0">2002</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2002</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name"
-                                    data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.0.0">Advance Diploma in Multimedia &amp; Animation</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Advance Diploma in Multimedia &amp; Animation</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1.0.0">LCC Infotech</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name">LCC Infotech</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-42" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.2">
+                                <div id="react-tinymce-42" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <p>
                                     <span>18 months PG Diploma in Multimedia and Animation</span>
                                   </p>
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.2"></div>
+                            <div class="clearfix"></div>
                           </article>
-                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1">
-                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0">
-                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0">
-                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.0.0">1996</span>
+                          <article data-bind="contents" class="">
+                            <div class="timeline-left marked">
+                              <h6 class="date-range">
+                                <span data-bind="start_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">1996</span>
                                 </span>
-                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.1">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.1.0">2000</span>
+                                <span data-bind="end_date">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2000</span>
                                 </span>
                               </h6>
                             </div>
-                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1">
-                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0">
-                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.0">
-                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name"
-                                    data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.0.0">Bachelor of Commerce (B.Com.)</span>
+                            <div class="timeline-right">
+                              <div class="article-body">
+                                <h4 data-bind="title">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Bachelor of Commerce (B.Com.)</span>
                                 </h4>
-                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1">
-                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1.0">
-                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name"
-                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1.0.0">University of Calcutta</span>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow">
+                                  <h5 data-bind="organization">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name">University of Calcutta</span>
                                   </h5>
                                 </div>
-                                <div id="react-tinymce-44" class="mce-content-body" spellcheck="true" placeholder="Description"
-                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.2">
+                                <div id="react-tinymce-44" class="mce-content-body" spellcheck="true" placeholder="Description">
                                   <p>
                                     <span>Honours in Accounting and Finance</span>
                                   </p>
                                 </div>
                               </div>
                             </div>
-                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.2"></div>
+                            <div class="clearfix"></div>
                           </article>
                         </section>
-                        <section class="editor-visible" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2">
-                          <div class="col-sm-4 timetable-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.0"></div>
-                          <div class="col-sm-8 timetable-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1">
-                            <div data-bind="add-section-btn" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1.0">
-                              <span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"
-                                data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1.0.0"></span>
+                        <section class="editor-visible">
+                          <div class="col-sm-4 timetable-left"></div>
+                          <div class="col-sm-8 timetable-right">
+                            <div data-bind="add-section-btn">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"></span>
                             </div>
                           </div>
-                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.2"></div>
+                          <div class="clearfix"></div>
                         </section>
-                        <div class="timeline-start" data-reactid=".0.0.0.3.$main.1.0.1.0.2.3"></div>
-                        <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.4"></div>
+                        <div class="timeline-start"></div>
+                        <div class="clearfix"></div>
                       </div>
-                      <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.3"></div>
+                      <div class="clearfix"></div>
                     </div>
                   </div>
                 </div>
-                <noscript data-reactid=".0.0.0.3.$main.1.1"></noscript>
+                <noscript></noscript>
               </div>
             </div>
           </div>
@@ -807,5 +768,15 @@
     <![endif]-->
 
 </body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110220347-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110220347-1');
+</script>
 
 </html>
