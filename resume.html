@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html class="localstorage mediaqueries classlist placeholder atobbtoa atob-btoa">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>VisualCV</title>
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <style type="text/css">
+    .kMoxiz {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: -260px;
+      width: 260px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      background-color: #fff;
+      padding: 0;
+      z-index: 100;
+      border-left: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+
+    }
+
+    @media (min-width: 768px) {
+      .kMoxiz {
+        top: 60px;
+        width: auto;
+        right: 0;
+        bottom: auto;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+      }
+
+    }
+
+    .hPwgdN {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      color: #777 !important;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      min-width: 180px;
+    }
+
+    .hPwgdN:hover {
+      color: #333 !important;
+    }
+
+    .hPwgdN:last-child {
+      border-bottom: none;
+    }
+
+    .hPwgdN i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .crqwyy {
+      transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      transition: -ms-transform .3s, -webkit-transform .3s, transform .3s;
+      -webkit-transition: -webkit-transform .3s, transform .3s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #eee;
+
+    }
+
+    @media (min-width: 768px) {
+      .crqwyy {
+        transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+
+      }
+
+    }
+
+    .jbFAku {
+      transform: translate3d(-260px, 0, 0);
+      -ms-transform: translate3d(-260px, 0, 0);
+      -webkit-transform: translate3d(-260px, 0, 0);
+      transition: -ms-transform .3s, -webkit-transform .3s, transform .3s;
+      -webkit-transition: -webkit-transform .3s, transform .3s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #eee;
+
+    }
+
+    @media (min-width: 768px) {
+      .jbFAku {
+        transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+
+      }
+
+    }
+
+    .heiEhu {
+      position: absolute;
+      top: 120px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+
+    }
+
+    .heiEhu .cv-preview {
+      padding: 10px;
+      margin-top: 0;
+      position: relative;
+      left: 0;
+      top: 0;
+
+    }
+
+    .heiEhu .cv-preview .mce-item-table {
+      border: none;
+
+    }
+
+    .heiEhu .cv-preview .mce-item-table td,
+    .heiEhu .cv-preview .mce-item-table th,
+    .heiEhu .cv-preview .mce-item-table caption {
+      border: none;
+
+    }
+
+    @media (min-width: 500px) {
+      .heiEhu .cv-preview {
+        padding: 20px;
+
+      }
+
+    }
+
+    @media (min-width: 768px) {
+      .heiEhu {
+        top: 60px;
+
+      }
+
+    }
+  </style>
+  <link rel="stylesheet" href="./css/visualcv.css">
+</head>
+
+<body>
+  <div id="app">
+    <span data-reactid=".0">
+      <div data-reactid=".0.0">
+        <div class="crqwyy" data-reactid=".0.0.0">
+          <div class="s-alert-wrapper" data-reactid=".0.0.0.2"></div>
+          <div data-reactid=".0.0.0.3">
+            <div data-reactid=".0.0.0.3.$main">
+              <div class="scrollable-container heiEhu" data-reactid=".0.0.0.3.$main.1">
+                <div class="cv-viewer cv-preview" data-reactid=".0.0.0.3.$main.1.0">
+                  <link rel="stylesheet" type="text/css" href="./css/air.css" data-reactid=".0.0.0.3.$main.1.0.$air">
+                  <div class="cv-container animated fadeIn " data-reactid=".0.0.0.3.$main.1.0.1">
+                    <div class="cv-content single-column" data-reactid=".0.0.0.3.$main.1.0.1.0">
+                      <section id="profile" class="vcard profile" data-reactid=".0.0.0.3.$main.1.0.1.0.0">
+                        <article data-bind="content" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0">
+                          <div class="user-thumb visible" data-bind="thumb" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.0">
+                            <div class="css-crop bg-cover" style="background-image:url(img/profile.jpg);"
+                              data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.0.0"></div>
+                          </div>
+                          <div class="fn user-title" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1">
+                            <h1 class="full-name" data-bind="full_name" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.0">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Full name" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.0.0">Prasanta Saha</span>
+                            </h1>
+                            <h2 class="title" data-bind="headline" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.1">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Headline / current title"
+                                data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.1.1.0">Senior Software Development Engineer at Oath </span>
+                            </h2>
+                          </div>
+                          <ul class="user-contact nowrap-list" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2">
+                            <li class="adr locality" data-bind="location" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.0">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Location" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.0.0">San Francisco Bay Area, USA</span>
+                            </li>
+                            <li class="phone" data-bind="phone" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.1">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="Phone" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.1.0">(650) 242-5407</span>
+                            </li>
+                            <li class="email" data-bind="email" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.2">
+                              <a href="mailto:prasanta.work@outlook.com" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.2.2.0">prasanta.work@outlook.com</a>
+                            </li>
+                          </ul>
+                          <ul class="user-links user-websites nowrap-list" data-bind="websites" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3">
+                            <li data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0">
+                              <a href="https://github.com/prasantasaha" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0">
+                                <i class="fa fa-fw fa-github" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.0"></i>
+                                <span data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.1">&nbsp;</span>
+                                <span data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.3.0.0.2">github.com/prasantasaha</span>
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.0.0.4"></div>
+                        </article>
+                      </section>
+                      <section id="summary" class="cv-summary text_story" data-reactid=".0.0.0.3.$main.1.0.1.0.1">
+                        <article data-bind="content" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.1.0">
+                          <div id="react-tinymce-24" class="about-text mce-content-body" spellcheck="true" placeholder="Description"
+                            data-reactid=".0.0.0.3.$main.1.0.1.0.1.0.0">
+                            <p>
+                              <span>Experienced, resourceful, result-oriented, full-stack engineer, specializing in web application
+                                design, architecture and development, with a focus on quality and an eye to emerging technologies.&nbsp;</span>
+                              <br>
+                              <span></span>
+                            </p>
+                            <p>
+                              <br>
+                              <span>
+                                <span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">Technical Skills and Tools</span>
+                              </span>
+                            </p>
+                            <ul>
+                              <li>
+                                <span>Languages: JavaScript; ES2015, ActionScript, C#, SASS/LESS
+                                  <span>&nbsp;</span>
+                                </span>
+                              </li>
+                              <li>
+                                <span>Frameworks: Angular; React; Redux; Node.js</span>
+                              </li>
+                              <li>
+                                <span>Tools and stack: Webpack; Yarn/NPM; Gulp; Selenium; TeamCity; Jenkins; Git;&nbsp;LINQ</span>
+                              </li>
+                              <li>
+                                <span>Databases: MySQL; MSSQL, MongoDB</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </article>
+                        <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.1.1"></div>
+                      </section>
+                      <div class="timeline" data-reactid=".0.0.0.3.$main.1.0.1.0.2">
+                        <section class="timeline-row dated_story" data-bind="sections" id="positions" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0">
+                          <div class="timeline-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0">
+                            <header data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0">
+                              <h3 class="header-text empty" data-bind="label" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0.0">
+                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.0.0.0.0">Work experience</span>
+                              </h3>
+                            </header>
+                          </div>
+                          <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.1"></div>
+                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.2"></div>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.0.0">2016-08</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.0.0.1.0">Current</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.0.0">Senior Software Development Engineer</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.1.0.0">Oath Inc. San Francisco Bay Area, USA</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-26" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.1.0.2">
+                                  <p>
+                                    <br>
+                                  </p>
+                                  <ul>
+                                    <li>
+                                      <span>Designing and implementin</span>g
+                                      <span>highly intricate web application for planning and optimizing&nbsp;TV advertisement</span>
+                                      <span>&nbsp;</span>using C#, JavaScript, TypeScript, Angular</li>
+                                    <li>Prototyping advanced features</li>
+                                    <li>
+                                      <span>Building analytics dashboards using d3.js, nvd3, dcjs, and Crossfilter</span>
+                                    </li>
+                                    <li>Designing user interfaces and work-flows</li>
+                                    <li>Designing object frameworks and web application architecture</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:0.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.0.0">2013-02</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.0.0.1.0">2016-08</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.0.0">UI Architect</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.1.0.0">Imagine Technologies Inc. (contracted to Adap.tv/AOL), San Francisco Bay Area, USA</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-28" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.1.0.2">
+                                  <ul>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>Led&nbsp;</span>
+                                        </span>an international team in porting legacy Adobe Flex application over to an AngularJS
+                                        based stack.</span>
+                                    </li>
+                                    <li>Coordinate between product management, business and
+                                      <span>&nbsp;</span>
+                                      <span>development&nbsp;</span>team both on-site and offshore to deliver high-quality features
+                                      in a predictable and timely fashion</li>
+                                    <li>
+                                      <span>Designed and
+                                        <span>implemented&nbsp;</span>
+                                      </span>
+                                      <span>
+                                        <span>user interfaces, work-flows, custom components and data visualization&nbsp;</span>
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>
+                                            <span>Created&nbsp;</span>and maintained code quality tooling utilizing Node, ESLint,
+                                            TeamCity, Selenium, Karma and Istanbul while closely working with the QA team</span>
+                                        </span>
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:1.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.0.0">2008-11</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.0.0.1.0">2013-01</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.0.0">Technical Lead-Flex</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.1.0.0">Pramati Technologies Inc. (contracted to Adap.tv/AOL), Hyderabad Area, India</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-30" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.1.0.2">
+                                  <ul>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>
+                                            <span>
+                                              <span>
+                                                <span>
+                                                  <span>
+                                                    <span>Managed&nbsp;</span>a team of&nbsp; 7 UI developers</span>
+                                                </span>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>
+                                            <span>
+                                              <span>
+                                                <span>
+                                                  <span>Designed&nbsp;</span>
+                                                </span>and implemented a highly intricate Rich Internet applications in Adobe Flex&nbsp;
+                                                <span>
+                                                  <span>utilizing
+                                                    <span>&nbsp;</span>
+                                                    <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank"
+                                                      rel="nofollow" data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>
+                                                  </span>
+                                                </span>
+                                              </span>
+                                            </span>
+                                          </span>
+                                        </span>
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>Explored new areas of technology and products, worked on proof of concepts.&nbsp;</span>
+                                        </span>
+                                      </span>
+                                    </li>
+                                    <li>Coordinated between product management and
+                                      <span>development&nbsp;</span>team both on-site and offshore to deliver high-quality features
+                                      in a predictable and timely fashion</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:2.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.0.0">2008-04</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.0.0.1.0">2008-11</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.0.0">Team Lead</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.1.0.0">SemanticSpace Technologies, Hyderabad Area, India</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-32" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.1.0.2">
+                                  <p>
+                                    <span>
+                                      <span>
+                                        <span></span>
+                                      </span>
+                                    </span>
+                                    <br>
+                                  </p>
+                                  <ul>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>Designed&nbsp;</span>
+                                        </span>and implemented Adobe Flex Chat Client
+                                        <span>utilizing XMPP protocol</span>
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>Created several prototypes</span>
+                                      </span>
+                                      <span>
+                                        <span>&nbsp;for&nbsp;
+                                          <span>on-line&nbsp;collaboration tool utilizing Flash Media Server</span>&nbsp;&nbsp;</span>
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:3.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.0.0">2007-04</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.0.0.1.0">2008-03</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.0.0">Team Lead - Multimedia</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.1.0.0">Instancy Inc. Hyderabad Area, India</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-34" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.1.0.2">
+                                  <ul>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>
+                                            <span>Led&nbsp;</span>
+                                          </span>
+                                        </span>UI development team </span>
+                                    </li>
+                                    <li>
+                                      <span>Contributed to the development and improvement of the front-end for the E-Learning
+                                        platform built
+                                        <span>using&nbsp;</span>Flash/ActionScript and .
+                                        <span>N</span>et.&nbsp;</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:4.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.0.0">2006-06</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.0.0.1.0">2007-03</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.0.0">Flash Developer</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.1.0.0">Catalytic Software, Hyderabad Area, India</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-36" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.1.0.2">
+                                  <ul>
+                                    <li>
+                                      <span>
+                                        <span>Created&nbsp;</span>
+                                      </span>a variety of custom widgets and
+                                      <span>R</span>ich Internet applications in Adobe Flex&nbsp;
+                                      <span>
+                                        <span>utilizing
+                                          <a href="https://en.wikipedia.org/wiki/BlazeDS" target="_blank" rel="nofollow"
+                                            data-mce-href="https://en.wikipedia.org/wiki/BlazeDS">Blaze Data Service</a>.</span>
+                                      </span>&nbsp;</li>
+                                    <li>
+                                      <span>
+                                        <span>Worked&nbsp;</span>extensively with video play
+                                        <span>b</span>ack and Flash media server&nbsp;&nbsp;</span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>Worked&nbsp;</span>closely with a design team on developing skinnable, reusable Adobe
+                                        Flex Based components and widgets</span>.</li>
+                                    <li>
+                                      <span>
+                                        <span>Conducted multiple training sessions on web development and best practices</span>
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:5.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.0.0">2005-01</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.0.0.1.0">2006-05</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.0.0">Developer - Media Technology</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.1.0.0">Trina Systems, Hyderabad Area, India</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-38" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.1.0.2">
+                                  <ul>
+                                    <li>
+                                      <span>Built&nbsp;reusable&nbsp;</span>shells for holding variations of content, interactive
+                                      games and XML driven templates for E-Learning courses that are customizable in many
+                                      aspects</li>
+                                    <li>
+                                      <span>
+                                        <span>Provided tech/architectural
+                                          <span>support&nbsp;</span>to multiple projects</span>
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <span>
+                                          <span>Built&nbsp;</span>a library of reusable components using Flash, ActionScript and
+                                          JavaScript</span>
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:6.2"></div>
+                          </article>
+                          <article data-bind="contents" class="page-break" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.0.0">2005-01</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.0.0.1.0">2006-05</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Job title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.0.0">Developer</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="Organization"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.1.0.0">TRINA SYSTEMS</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-40" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.1.0.2">
+                                  <p>Worked on SCORM based shell for holding variations of content and XML driven templates
+                                    for E-Learning courses that are customizable in many aspects. During this time, I've
+                                    worked on almost 15 e-learning courses which are graphically rich and within the constraints
+                                    of usability, accessibility, and functionality.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:0.3:7.2"></div>
+                          </article>
+                        </section>
+                        <section class="timeline-row dated_story" data-bind="sections" id="degrees" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1">
+                          <div class="timeline-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0">
+                            <header data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0">
+                              <h3 class="header-text empty" data-bind="label" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0.0">
+                                <span class="undefined needsclick" contenteditable="false" data-placeholder="Education" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.0.0.0.0">Education</span>
+                              </h3>
+                            </header>
+                          </div>
+                          <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.1"></div>
+                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.2"></div>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.0.0">2000</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.0.0.1.0">2002</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name"
+                                    data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.0.0">Advance Diploma in Multimedia &amp; Animation</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.1.0.0">LCC Infotech</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-42" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.1.0.2">
+                                  <p>
+                                    <span>18 months PG Diploma in Multimedia and Animation</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:0.2"></div>
+                          </article>
+                          <article data-bind="contents" class="" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1">
+                            <div class="timeline-left marked" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0">
+                              <h6 class="date-range" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0">
+                                <span data-bind="start_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.0.0">1996</span>
+                                </span>
+                                <span data-bind="end_date" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.1">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.0.0.1.0">2000</span>
+                                </span>
+                              </h6>
+                            </div>
+                            <div class="timeline-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1">
+                              <div class="article-body" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0">
+                                <h4 data-bind="title" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.0">
+                                  <span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name"
+                                    data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.0.0">Bachelor of Commerce (B.Com.)</span>
+                                </h4>
+                                <div data-bind="organization_url" target="_blank" rel="nofollow" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1">
+                                  <h5 data-bind="organization" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1.0">
+                                    <span class="undefined needsclick" contenteditable="false" data-placeholder="School name"
+                                      data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.1.0.0">University of Calcutta</span>
+                                  </h5>
+                                </div>
+                                <div id="react-tinymce-44" class="mce-content-body" spellcheck="true" placeholder="Description"
+                                  data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.1.0.2">
+                                  <p>
+                                    <span>Honours in Accounting and Finance</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.1:1.3:1.2"></div>
+                          </article>
+                        </section>
+                        <section class="editor-visible" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2">
+                          <div class="col-sm-4 timetable-left" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.0"></div>
+                          <div class="col-sm-8 timetable-right" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1">
+                            <div data-bind="add-section-btn" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1.0">
+                              <span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"
+                                data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.1.0.0"></span>
+                            </div>
+                          </div>
+                          <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.2.2"></div>
+                        </section>
+                        <div class="timeline-start" data-reactid=".0.0.0.3.$main.1.0.1.0.2.3"></div>
+                        <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.2.4"></div>
+                      </div>
+                      <div class="clearfix" data-reactid=".0.0.0.3.$main.1.0.1.0.3"></div>
+                    </div>
+                  </div>
+                </div>
+                <noscript data-reactid=".0.0.0.3.$main.1.1"></noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <!--[if lte IE 8]>
+    <h2 class="text-center">Looks like you are using an older browser,<br/> please update your browser to the latest version of Chrome, Safari, Firefox, Windows Edge or IE 11+</h2>
+    <![endif]-->
+
+</body>
+
+</html>
