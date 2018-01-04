@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 body {
@@ -199,11 +199,7 @@ header.masthead {
     position: relative;
     display: block;
     max-width: 400px;
-    margin: 0 auto;
-    cursor: not-allowed;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
-    /* For IE8 and earlier */ }
+    margin: 0 auto; }
     #portfolio .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
