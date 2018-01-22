@@ -74,7 +74,7 @@
       <hr class="star-primary">
       <div class="row">
         <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#" data-toggle="modal" data-target="#portfolioModal1">
+          <a class="portfolio-link" href="#" data-toggle="modal" data-target="#weatherModal">
             <div class="caption">
               <div class="caption-content">
                 <i class="fa fa-search-plus fa-3x"></i>
@@ -83,7 +83,19 @@
             <img class="img-fluid" src="img/portfolio/weather.jpg" alt="Weather App">
           </a>
         </div>
+
+        <div class="col-sm-4 portfolio-item">
+          <a class="portfolio-link" href="#" data-toggle="modal" data-target="#kanbanModal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/kanban-board.png" alt="Kanban Todo Board">
+          </a>
+        </div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -226,7 +238,7 @@
   </div>
 
   <!-- Portfolio Modals -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -242,11 +254,44 @@
                 <hr class="star-primary">
                 <img class="img-fluid img-centered" src="img/portfolio/weather.jpg" alt="">
                 <!-- Description -->
-                <p></p>
+                <p>Weather App using React, Material-UI, Webpack, Sass (for the stylesheets), React router, Redux, ES6 JavaScript,
+                  displaying local real-time report powered by a 3rd party source and integrating source API. The application
+                  has auto-complete feature, geolocation or address lookup. search caching, daily, weekly, bi-weekly forecast
+                  mechanism. fully responsive layout and animated SVGs.</p>
                 <a href="react-showcase/#weather-demo">
-                <button class="btn btn-success" type="button">
-                  <i class="fa fa-external-link"></i>
-                  Launch</button>
+                  <button class="btn btn-success btn-lg" type="button">
+                    <i class="fa fa-external-link"></i>
+                    Launch</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="kanbanModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2>Weather App Demo</h2>
+                <hr class="star-primary">
+                <img class="img-fluid img-centered" src="img/portfolio/kanban-board.png" alt="">
+                <!-- Description -->
+                <p></p>
+                <a href="kanban-todo/">
+                  <button class="btn btn-success btn-lg" type="button">
+                    <i class="fa fa-external-link"></i>
+                    Launch</button>
                 </a>
               </div>
             </div>
